@@ -59,7 +59,7 @@ def generate_docx(resume_json):
     return doc_io
 
 # Streamlit UI
-st.title("AI-Powered Resume Optimizer")
+st.title("Intelli-CV")
 
 uploaded_file = st.file_uploader("Upload your resume (.docx)", type=["docx"])
 job_description = st.text_area("Paste the job description here")
