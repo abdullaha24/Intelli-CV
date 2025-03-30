@@ -69,7 +69,7 @@ if st.button("Optimize Resume"):
         files = {"resume": uploaded_file}
         data = {"job_description": job_description}
 
-        response = requests.post("http://127.0.0.1:8000/optimize_resume/", files=files, data=data)
+        response = requests.post("https://ai-resume-writer-backend.onrender.com/optimize_resume", files=files, data=data)
 
         if response.status_code == 200:
             response_json = response.json()
